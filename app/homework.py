@@ -2,15 +2,14 @@
 import json
 import logging
 import time
-from enum import Enum
 from http import HTTPStatus
 from logging.handlers import RotatingFileHandler
 
 import requests
 import telegram
 
-from conf import (API_URL, CHAT_ID, ERROR_PERIOD, PRAKTIKUM_TOKEN,
-                  REQUESTS_PERIOD, TELEGRAM_TOKEN)
+from app.conf import (API_URL, CHAT_ID, ERROR_PERIOD, PRAKTIKUM_TOKEN,
+                      REQUESTS_PERIOD, TELEGRAM_TOKEN)
 
 formatter = logging.Formatter(
     '%(asctime)s - %(name)s - %(levelname)s - %(funcName)s - %(message)s'
